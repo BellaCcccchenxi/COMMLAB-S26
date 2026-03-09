@@ -1,0 +1,893 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+button, input {
+    font-family: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Google Sans', 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+    background-color: rgb(246, 248, 252);
+    color: rgb(32, 33, 36);
+}
+
+.gmail-app {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.gmail-app .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(224, 224, 224);
+    position: relative;
+    z-index: 10;
+}
+
+.gmail-app .top-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.gmail-app .menu-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: rgb(95, 99, 104);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gmail-app .menu-btn:hover {
+    background-color: rgb(241, 243, 244);
+}
+
+.gmail-app .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 22px;
+    color: rgb(95, 99, 104);
+}
+
+.gmail-app .logo i {
+    color: rgb(66, 133, 244);
+    font-size: 24px;
+}
+
+.gmail-app .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(241, 243, 244);
+    border-radius: 8px;
+    padding: 8px 16px;
+    flex: 1;
+    max-width: 720px;
+    margin: 0 20px;
+}
+
+.gmail-app .search-bar i {
+    color: rgb(95, 99, 104);
+    margin-right: 16px;
+}
+
+.gmail-app .search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+}
+
+.gmail-app .top-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.gmail-app .active-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 16px;
+    background-color: rgb(232, 240, 254);
+    color: rgb(25, 103, 210);
+    font-size: 14px;
+}
+
+.gmail-app .status-dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(52, 168, 83);
+    border-radius: 50%;
+}
+
+.gmail-app .icon-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: rgb(95, 99, 104);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gmail-app .icon-btn:hover {
+    background-color: rgb(241, 243, 244);
+}
+
+.gmail-app .account-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgb(232, 240, 254);
+    padding: 4px 8px;
+    border-radius: 16px;
+}
+
+.gmail-app .account-badge span {
+    font-size: 14px;
+    color: rgb(25, 103, 210);
+}
+
+.gmail-app .avatar {
+    width: 32px;
+    height: 32px;
+    background-color: rgb(66, 133, 244);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.gmail-app .main-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+
+.gmail-app .sidebar {
+    min-width: 200px;
+    max-width: 256px;
+    background-color: rgb(246, 248, 252);
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.gmail-app .compose-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: rgb(194, 231, 255);
+    border: none;
+    border-radius: 16px;
+    padding: 12px 24px;
+    margin: 0 16px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.gmail-app .compose-btn i {
+    font-size: 18px;
+}
+
+.gmail-app .nav-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.gmail-app .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 24px;
+    color: rgb(32, 33, 36);
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 0 24px 24px 0;
+    white-space: nowrap;
+}
+
+.gmail-app .nav-item.active {
+    background-color: rgb(211, 227, 253);
+    font-weight: 500;
+}
+
+.gmail-app .nav-item:hover:not(.active) {
+    background-color: rgb(241, 243, 244);
+}
+
+.gmail-app .nav-item .count {
+    margin-left: auto;
+    font-weight: 500;
+}
+
+.gmail-app .labels-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px 8px;
+    font-size: 14px;
+    color: rgb(95, 99, 104);
+}
+
+.gmail-app .add-label-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: rgb(95, 99, 104);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.gmail-app .add-label-btn:hover {
+    background-color: rgb(241, 243, 244);
+}
+
+
+.gmail-app .email-list {
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    margin: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.gmail-app .list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 5;
+}
+
+.gmail-app .header-left, .gmail-app .header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.gmail-app .list-header .icon-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: rgb(95, 99, 104);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gmail-app .select-all {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.gmail-app .emails {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.gmail-app .email-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgb(241, 243, 244);
+    cursor: pointer;
+    min-width: 0;
+}
+
+.gmail-app .email-item:hover {
+    box-shadow: inset 1px 0 0 rgb(218, 220, 224), inset -1px 0 0 rgb(218, 220, 224), 0 1px 2px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.gmail-app .email-checkbox {
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.gmail-app .email-star {
+    margin-right: 16px;
+    color: rgb(251, 188, 4);
+    font-size: 16px;
+}
+
+.gmail-app .email-sender {
+    flex: 0 0 150px;
+    min-width: 120px;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.gmail-app .email-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.gmail-app .email-subject {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.gmail-app .email-attachment {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: rgb(95, 99, 104);
+    background-color: rgb(241, 243, 244);
+    padding: 2px 8px;
+    border-radius: 4px;
+    width: fit-content;
+}
+
+.gmail-app .email-time {
+    font-size: 12px;
+    color: rgb(95, 99, 104);
+    white-space: nowrap;
+    margin-left: 16px;
+    flex: 0 0 80px;
+    text-align: right;
+}
+
+.gmail-app .right-sidebar {
+    width: 48px;
+    background-color: rgb(246, 248, 252);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.gmail-app .sidebar-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.gmail-app .add-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: rgb(95, 99, 104);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slack-app {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+
+.slack-app .sidebar {
+    width: 280px;
+    background-color: #553c9a;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+}
+
+.slack-app .sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: 0 16px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.slack-app .logo {
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-right: 12px;
+}
+
+.slack-app .workspace-name {
+    flex: 1;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.slack-app .edit-icon {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.slack-app .sidebar-nav {
+    padding: 16px 0;
+}
+
+.slack-app .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.slack-app .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.slack-app .nav-icon {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    margin-right: 12px;
+}
+
+.slack-app .sidebar-section {
+    padding: 16px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.slack-app .section-title {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 0 16px 8px;
+}
+
+.slack-app .section-subtitle {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.4);
+    padding: 0 16px;
+}
+
+.slack-app .channel-list {
+    margin-top: 8px;
+}
+
+.slack-app .channel-item {
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+}
+
+.slack-app .channel-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.slack-app .channel-item.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.slack-app .add-channel {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.slack-app .dm-list {
+    margin-top: 8px;
+}
+
+.slack-app .dm-item {
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+}
+
+.slack-app .dm-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.slack-app .avatar {
+    width: 24px;
+    height: 24px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.slack-app .sidebar-bottom-nav {
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 16px;
+}
+
+.slack-app .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+
+.slack-app .top-bar {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.slack-app .back-forward {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.slack-app .nav-btn {
+    width: 24px;
+    height: 24px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.slack-app .refresh-btn {
+    width: 24px;
+    height: 24px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+.slack-app .search-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    padding: 6px 12px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.slack-app .search-icon {
+    width: 16px;
+    height: 16px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.slack-app .top-right-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.slack-app .icon {
+    width: 24px;
+    height: 24px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    margin-left: 12px;
+}
+
+.slack-app .channel-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.slack-app .star-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    margin-right: 12px;
+}
+
+.slack-app .channel-name {
+    flex: 1;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.slack-app .header-right {
+    display: flex;
+    align-items: center;
+}
+
+.slack-app .member-count {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.slack-app .avatars-group {
+    width: 40px;
+    height: 24px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    margin-right: 8px;
+}
+
+
+.slack-app .message-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.slack-app .message-tabs {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.slack-app .tab {
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #666666;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+.slack-app .tab.active {
+    color: #333333;
+    border-bottom-color: #553c9a;
+    font-weight: 500;
+}
+
+.slack-app .messages-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+}
+
+.slack-app .date-divider {
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+    margin: 16px 0;
+    padding: 4px 0;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.slack-app .message {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.slack-app .message-content {
+    flex: 1;
+}
+
+.slack-app .message-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.slack-app .username {
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.slack-app .timestamp {
+    font-size: 12px;
+    color: #999999;
+}
+
+.slack-app .message-text {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.slack-app .file-preview {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.slack-app .file-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #4285f4;
+    border-radius: 4px;
+    margin-right: 12px;
+}
+
+.slack-app .file-name {
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 4px;
+}
+
+.slack-app .file-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 12px;
+    margin-top: 8px;
+}
+
+.slack-app .card-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #4285f4;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.slack-app .card-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.slack-app .card-subtitle {
+    font-size: 12px;
+    color: #666666;
+}
+
+
+.slack-app .input-area {
+    border-top: 1px solid #e0e0e0;
+    padding: 12px 16px;
+}
+
+.slack-app .format-toolbar {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.slack-app .format-btn {
+    width: 28px;
+    height: 28px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666666;
+    cursor: pointer;
+}
+
+.slack-app .format-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.slack-app .message-input {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 12px;
+    color: #999999;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.slack-app .input-toolbar {
+    display: flex;
+    align-items: center;
+}
+
+.slack-app .toolbar-btn {
+    width: 28px;
+    height: 28px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #666666;
+    cursor: pointer;
+}
+
+.slack-app .toolbar-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.slack-app .send-btn {
+    width: 28px;
+    height: 28px;
+    background-color: #553c9a;
+    border-radius: 4px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.no-link-style {
+  color: inherit;   
+  text-decoration: none; 
+}
+
+.slack-app .logo {
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+}

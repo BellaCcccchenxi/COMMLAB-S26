@@ -1,0 +1,41 @@
+body{
+    margin:0;
+    background-color: blanchedalmond;
+
+
+}
+
+.mainWrapper{
+    background-color: rgb(80, 138, 104);
+    height:600px;
+    width: 100%;
+    max-width: 1000px;
+    margin:auto;
+
+}
+
+#headerWrapper{
+    background-color: rgb(208, 238, 226);
+}
+
+#headerWrapper h1{
+    text-align: center;
+
+}
+
+.box{
+    background-color: black;
+    width:21%;
+    height:33px;
+    display:inline-block;
+    padding:5px;
+    text-align: center;
+    outline:1px white solid;
+
+
+}
+#nav{
+    outline:2px dotted red;
+    width:600px;
+    margin:auto ;
+}

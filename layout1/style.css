@@ -1,0 +1,68 @@
+body{
+    margin:0;
+    background-color: rgb(178, 178, 252);
+
+}
+
+.box{
+    outline: 1px dashed black;
+    width: 200px;
+    padding: 30px;
+}
+
+.box p{
+    background-color: bisque;
+    text-align: center;
+}
+
+.one{
+    position:relative;
+    left:10px;
+    top:20px;
+}
+
+.one p{
+    position: relative;
+    left:2px;
+    top:-3px;
+
+
+}
+.two{
+    position: absolute;
+    left: 500px;
+    top: 300px;
+}
+
+.three{
+    position: fixed;
+    left:0px;
+    top:0px;
+}
+
+.five{
+    position: sticky;
+    top:0px;
+    left:200px;
+}
+.seven{
+    margin:auto;
+    width:100%;
+    max-width:800px;
+    position: relative;
+
+}
+
+.sevenChild{
+    outline: green 1px dotted;
+    width: 50px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.sevenChild p{
+    background-color: black;
+    color: aquamarine;
+    margin: 0;
+
+}

@@ -1,0 +1,36 @@
+.punch{
+    width:200px;
+    margin-left: 15%;
+
+    
+
+}
+
+.punchWrapper{
+    border: 1px dashed black;
+    width:200px;
+    margin-bottom: 30px;
+    display:inline-block;
+    margin-left: 10px;
+    padding:5px;
+    
+    margin:auto;
+    
+
+
+
+}
+.punchWrapper:hover{
+    border:4px blue;
+}
+
+.button:active{
+
+}
+.p:first-chind{
+    font-weight:bold;
+}
+
+.punchWrapper:nth-child(even){
+    border:2px, red;
+}

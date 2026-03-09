@@ -1,0 +1,29 @@
+body{
+    background-color: beige;
+
+}
+
+.container{
+    display: flex;
+    outline: 3px blue dotted;
+    /*flex-wrap:wrap;
+    flex-direction: column-reverse;*/
+
+    justify-content:center;
+    align-items: last baseline;
+
+
+}
+
+.item{
+    width:200px;
+    outline: 1px red dotted;
+}
+
+.second{
+    height: 100px;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-start;
+
+}

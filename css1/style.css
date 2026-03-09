@@ -1,0 +1,65 @@
+
+body{
+    margin: 0;
+    background-color: lightblue;
+
+}
+
+p{
+    color: aquamarine;
+    background-color: black;
+    text-transform: uppercase;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*comment*/
+    text-align: right;
+    letter-spacing: 5px;
+    padding-left: 10px;
+    margin-top: 0;
+}
+
+div{
+    /*border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+
+    border-style: solid;*/
+    border:4px black solid;
+    width: 200px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    background-color: azure;
+
+}
+
+h1, h2, h3 {
+
+
+
+}
+
+.highlight2{
+    text-decoration:wavy;
+    color: brown;
+
+}
+
+.highlight1{
+    text-decoration:underline;
+}
+
+
+/*span{
+    text-decoration: underline;
+}*/
+
+div p{
+
+    background-color: rgb(59, 219, 219);
+}
+
+#specialParagraph{
+    border:yellow 4px dotted;
+
+
+}

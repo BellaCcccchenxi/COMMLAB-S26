@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="gmail-app">
+    <div class="gmail-container">
+        <div class="top-bar" aria-label="Top navigation bar">
+            <div class="top-left">
+                <button class="menu-btn" aria-label="Toggle sidebar menu">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+                <div class="logo">
+                    <i class="fab fa"aria-hidden="true">M</i>
+                    <span>Antmail</span>
+                </div>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                <input type="text" placeholder="Search mail" aria-label="Search emails">
+                <i class="fas fa-sliders-h" aria-hidden="true" title="Search settings"></i>
+            </div>
+            <div class="top-right">
+                <div class="active-status">
+                    <span class="status-dot" aria-label="Active status"></span>
+                    <span>Active</span>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </div>
+                <button class="icon-btn" aria-label="Help center">
+                    <i class="fas fa-question-circle" aria-hidden="true"></i>
+                </button>
+                <button class="icon-btn" aria-label="Settings">
+                    <i class="fas fa-cog" aria-hidden="true"></i>
+                </button>
+                <button class="icon-btn" aria-label="Apps menu">
+                    <i class="fas fa-th" aria-hidden="true"></i>
+                </button>
+                <div class="account-badge" aria-label="User account: NYU">
+                    <span>NYAU</span>
+                    <div class="avatar" aria-hidden="true">W</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="sidebar" aria-label="Email navigation sidebar">
+                <button class="compose-btn" aria-label="Compose new email">
+                    <i class="fas fa-pen" aria-hidden="true"></i>
+                    <span>Compose</span>
+                </button>
+                <div class="nav-menu" aria-label="Main email navigation">
+                    <a href=" " class="nav-item active" aria-current="page">
+                        <i class="fas fa-inbox" aria-hidden="true"></i>
+                        <span>Inbox</span>
+                    </a >
+                    <a href="stillworking.html" class="nav-item">
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <span>Starred</span>
+                    </a >
+                    <a href="stillworking.html" class="nav-item">
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        <span>Snoozed</span>
+                    </a >
+                    <a href="stillworking.html" class="nav-item">
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        <span>Sent</span>
+                    </a >
+                    <a href="stillworking.html" class="nav-item">
+                        <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        <span>Drafts</span>
+                        <span class="count" aria-label="6 draft emails">6</span>
+                    </a >
+                    <a href="stillworking.html" class="nav-item">
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        <span>More</span>
+                    </a >
+                </div>
+                <div class="labels-section">
+                    <h3>Labels</h3>
+                    <button class="add-label-btn" aria-label="Add new label">
+                        <i class="fas fa-plus" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="email-list" aria-label="Email list">
+                <div class="list-header" aria-label="Email list controls">
+                    <div class="header-left">
+                        <input type="checkbox" class="select-all" aria-label="Select all emails">
+                        <button class="icon-btn" aria-label="Refresh emails">
+                            <i class="fas fa-redo" aria-hidden="true"></i>
+                        </button>
+                        <button class="icon-btn" aria-label="More options">
+                            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="header-right">
+                        <span>1-50 of 1,278</span>
+                        <button class="icon-btn" aria-label="Previous page">
+                            <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                        </button>
+                        <button class="icon-btn" aria-label="Next page">
+                            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="emails" role="list">
+                    <li class="email-item" role="listitem">
+                        <input type="checkbox" class="email-checkbox" aria-label="Select email">
+                        <i class="fas fa-star email-star" aria-label="Starred email" aria-hidden="true"></i>
+                        <a href="slack.html" class="no-link-style"><div class="email-sender">Slack</div></a >
+                        <div class="email-content">
+                            <span class="email-subject">You have a new pheromone...</span>
+                        </div>
+                        <div class="email-time">18:23:46</div>
+                    </li>
+                    <li class="email-item" role="listitem">
+                        <input type="checkbox" class="email-checkbox" aria-label="Select email">
+                        <i class="fas fa-star email-star" aria-label="Starred email" aria-hidden="true"></i>
+                        <div class="email-sender">Trainer Ant Major.Leon Eckert</div>
+                        <div class="email-content">
+                            <span class="email-subject">Due tonight: "URGENT: Tunnel Digging Project 3" - Notification se...</span>
+                        </div>
+                        <div class="email-time">18:23:45</div>
+                    </li>
+
+                    <li class="email-item" role="listitem">
+                        <input type="checkbox" class="email-checkbox" aria-label="Select email">
+                        <i class="fas fa-star email-star" aria-label="Starred email" aria-hidden="true"></i>
+                        <div class="email-sender">Worker Health Center</div>
+                        <div class="email-content">
+                            <span class="email-subject">[Worker Health]Prolonged Antennae Vibration Alert: Take a Break...</span>
+                            <span class="email-attachment">
+                                <i class="fas fa-image" aria-hidden="true"></i> 2026-03-09...
+                            </span>
+                        </div>
+                        <div class="email-time">18:23:42</div>
+                    </li>
+
+                    <li class="email-item" role="listitem">
+                        <input type="checkbox" class="email-checkbox" aria-label="Select email">
+                        <i class="fas fa-star email-star" aria-label="Starred email" aria-hidden="true"></i>
+                        <div class="email-sender">TA Ant Worker Lily.</div>
+                        <div class="email-content">
+                            <span class="email-subject">Tonight 19:00 Pheromone Q&A Session(Chamber3)...</span>
+                        </div>
+                        <div class="email-time">18:23:35</div>
+                    </li>
+
+                    <li class="email-item" role="listitem">
+                        <input type="checkbox" class="email-checkbox" aria-label="Select email">
+                        <i class="fas fa-star email-star" aria-label="Starred email" aria-hidden="true"></i>
+                        <div class="email-sender">Toby at Cuttle</div>
+                        <div class="email-content">
+                            <span class="email-subject">Cuttle for 3D Printing - Hi everyone, Here's the latest with Cuttle. Cuttle for 3...</span>
+                        </div>
+                        <div class="email-time">18:23:32</div>
+                    </li>
+
+                    <li class="email-item" role="listitem">
+                        <input type="checkbox" class="email-checkbox" aria-label="Select email">
+                        <i class="fas fa-star email-star" aria-label="Starred email" aria-hidden="true"></i>
+                        <div class="email-sender">IMA Course Admin.</div>
+                        <div class="email-content">
+                            <span class="email-subject">Next Week's Preview:Advanced Foraging Path Algorithms(Bring Mandibles)...</span>
+                        </div>
+                        <div class="email-time">18:23:31</div>
+                    </li>
+
+                    <li class="email-item" role="listitem">
+                        <input type="checkbox" class="email-checkbox" aria-label="Select email">
+                        <i class="fas fa-star email-star" aria-label="Starred email" aria-hidden="true"></i>
+                        <div class="email-sender">Worker 0721.</div>
+                        <div class="email-content">
+                            <span class="email-subject">Academic Support-Quick Question About This Afternoon's Foraging Lab...</span>
+                        </div>
+                        <div class="email-time">18:23:24</div>
+                    </li>
+
+                    <li class="email-item" role="listitem">
+                        <input type="checkbox" class="email-checkbox" aria-label="Select email">
+                        <i class="fas fa-star email-star" aria-label="Starred email" aria-hidden="true"></i>
+                        <div class="email-sender">Worker Leon.</div>
+                        <div class="email-content">
+                            <span class="email-subject">Group Project Shanzhai Nest Design Draft Uploaded...</span>
+                        </div>
+                        <div class="email-time">18:23:24</div>
+                    </li>
+
+                    <li class="email-item" role="listitem">
+                        <input type="checkbox" class="email-checkbox" aria-label="Select email">
+                        <i class="fas fa-star email-star" aria-label="Starred email" aria-hidden="true"></i>
+                        <div class="email-sender">noreply@System Notification.</div>
+                        <div class="email-content">
+                            <span class="email-subject">Submission Confirmation-:Homework2- elementary foraging path algorithms - ...</span>
+                        </div>
+                        <div class="email-time">18:23:23</div>
+                    </li>
+
+                    <li class="email-item" role="listitem">
+                        <input type="checkbox" class="email-checkbox" aria-label="Select email">
+                        <i class="fas fa-star email-star" aria-label="Starred email" aria-hidden="true"></i>
+                        <div class="email-sender">Nest Academics.</div>
+                        <div class="email-content">
+                            <span class="email-subject">[Academics]Friday.Cross-Species Seminar:Why Are Human Crumbs Getting Saltier?...</span>
+                        </div>
+                        <div class="email-time">18:23:20</div>
+                    </li>
+
+                    <li class="email-item" role="listitem">
+                        <input type="checkbox" class="email-checkbox" aria-label="Select email">
+                        <i class="fas fa-star email-star" aria-label="Starred email" aria-hidden="true"></i>
+                        <div class="email-sender">Google Ant.</div>
+                        <div class="email-content">
+                            <span class="email-subject">Doc Update:group2 Tunnel Structure Analysis-New Comments...</span>
+                        </div>
+                        <div class="email-time">18:23:17</div>
+                    </li>
+
+                    <li class="email-item" role="listitem">
+                        <input type="checkbox" class="email-checkbox" aria-label="Select email">
+                        <i class="fas fa-star email-star" aria-label="Starred email" aria-hidden="true"></i>
+                        <div class="email-sender">Writing TA</div>
+                        <div class="email-content">
+                            <span class="email-subject">This Week's Pheromone Writing Task🥐:Describe Your Foraging Experience...</span>
+                        </div>
+                        <div class="email-time">18:23:14</div>
+                    </li>
+                </div>
+            </div>
+
+            <div class="right-sidebar" aria-label="Quick actions sidebar">
+                <div class="sidebar-icons">
+                    <button class="icon-btn" aria-label="Calendar">
+                        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                    </button>
+                    <button class="icon-btn" aria-label="Ideas/Notes">
+                        <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                    </button>
+                    <button class="icon-btn" aria-label="Tasks">
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
+                    </button>
+                    <button class="icon-btn" aria-label="Contacts">
+                        <i class="fas fa-user" aria-hidden="true"></i>
+                    </button>
+                    <button class="icon-btn" aria-label="Themes">
+                        <i class="fas fa-palette" aria-hidden="true"></i>
+                    </button>
+                    <button class="add-btn" aria-label="Add new item">
+                        <i class="fas fa-plus" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
