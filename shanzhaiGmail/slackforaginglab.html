@@ -17,7 +17,7 @@
 
         .slack-app .sidebar {
             width: 280px;
-            background-color: rgb(85, 60, 154);
+            background-color: rgb(60, 2, 66);
             color: rgb(255, 255, 255);
             display: flex;
             flex-direction: column;
@@ -52,16 +52,7 @@
             flex-shrink: 0;
         }
 
-        .slack-app .logo i,
-        .slack-app .edit-icon i,
-        .slack-app .nav-icon i,
-        .slack-app .search-icon i,
-        .slack-app .icon i,
-        .slack-app .star-icon i,
-        .slack-app .send-btn i {
-            color: inherit;
-            font-size: 16px;
-        }
+        
 
         .slack-app .avatar {
             width: 24px;
@@ -101,10 +92,10 @@
             </div>
 
             <div class="sidebar-nav">
-                <div class="nav-item">
+                <a href="index.html"><div class="nav-item">
                     <div class="nav-icon"><i class="fa-solid fa-comments"></i></div>
-                    <span>Threads</span>
-                </div>
+                    <span>Antmail</span>
+                </div></a>
                 <div class="nav-item">
                     <div class="nav-icon"><i class="fa-solid fa-file-pen"></i></div>
                     <span>Drafts & Sent</span>
@@ -237,25 +228,9 @@
                                     <span class="timestamp">18:24:01</span>
                                 </div>
                                 <div class="message-text"></div>
-                                <div class="file-preview">Alright workers, today's forgaing lab task: optimize the cookie crumb transport route from the kitchen to Chamber 3. Record your path length, time, and energy consumption
+                                <div class="file-preview">Alright workers, today's forgaing lab task: optimize the cookie crumb transport route from the kitchen to Chamber 3. Record your path length, time, and energy consumption.🍪📐
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="message-group">
-                        <div class="message">
-                            <div class="avatar">Q</div>
-                            <div class="message-content">
-                                <div class="message-header">
-                                    <span class="username">QueenAnt</span>
-                                    <span class="timestamp">17:19:43</span>
-                                </div>
-                                <div class="message-text">
-                                    <div class="file-preview">
-                                        Alright workers, tonight's algorithm class is about using trigonometry to optimize foraging paths.Do you think the shortest route from the kitchen to the nest should avoid human slippers or go around the cat food bowl?
-                                    </div>
-                                </div>
+                                <img src="images/ant.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -265,26 +240,14 @@
                             <div class="avatar">L</div>
                             <div class="message-content">
                                 <div class="message-header">
-                                    <span class="username">Woker Leon</span>
-                                    <span class="timestamp">17:19:47</span>
+                                    <span class="username">Worker Leon</span>
+                                    <span class="timestamp">18:24:05</span>
                                 </div>
-                                <div class="message-text"></div>
-                                <div class="file-preview">Reporting, my Queen! I think we should avoid slippers. their vibration frequency disrupts our pheromone navigation. But the cat food bowl often has tasty leftovers, worth the detour.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="message-group">
-                        <div class="message">
-                            <div class="avatar">Q</div>
-                            <div class="message-content">
-                                <div class="message-header">
-                                    <span class="username">QueenAnt</span>
-                                    <span class="timestamp">17:19:49</span>
-                                </div>
-                                <div class="message-text"></div>
-                                <div class="file-preview">Good point.Who has a concrete trigcalculation example? Worker Eric, your last assignment was excellent---share it.
+                                <div class="message-text">
+                                    <div class="file-preview">
+                                     Reporting, my Queen! I tested three routes: the detour around the cat food bowl is 15% longer but has higher safety; the route through the slipper zone is shortest, but I almost got stepped on yesterday.🐱🚫👟⚠️   
+                                    </div>
+                                    <img src="images/catfood.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -296,11 +259,28 @@
                             <div class="message-content">
                                 <div class="message-header">
                                     <span class="username">Worker Eric</span>
-                                    <span class="timestamp">17:19:53</span>
+                                    <span class="timestamp">18:24:09</span>
                                 </div>
                                 <div class="message-text"></div>
-                                <div class="file-preview">Thank you, Queen!I calculated the straightline distance from a crumb drop point to the nest, but we had to detour around a puddle. I measured angles with my antennae and found that a 60 degrees path, though longer, had a higher safety factor.
+                                <div class="file-preview">
+                                    I tried Leon's route and found a small honey residue at the 47° turn—brought it back! 🍯 Suggest marking this as a secondary food source.
                                 </div>
+                                <img src="images/honey.webp" alt="real honey" width="500" height="400">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="message-group">
+                        <div class="message">
+                            <div class="avatar">X</div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <span class="username">Xiao</span>
+                                    <span class="timestamp">18:24:13</span>
+                                </div>
+                                <div class="message-text"></div>
+                                <div class="file-preview">I measured angles with my antennae and found that taking a 62° detour around the puddle 💧adds 8 seconds but avoids the ant-killer—the vacuum cleaner.</div>
+                                <img src="images/puddle.jpg" alt="real puddle" width="400" height="300">
                             </div>
                         </div>
                     </div>
@@ -311,11 +291,24 @@
                             <div class="message-content">
                                 <div class="message-header">
                                     <span class="username">QueenAnt</span>
-                                    <span class="timestamp">17:19:55</span>
+                                    <span class="timestamp">17:19:53</span>
                                 </div>
                                 <div class="message-text"></div>
-                                <div class="file-preview">Excellent!Everyone use Eric's approach. Tonight's homework: plan an optimal route for tomorrow's foraging expedition. Submit your antennae-drawn maps in #tunnel-homework.
+                                <div class="file-preview">Excellent data! Xiao, share your angle calculations in #tunnel-homework. ✅Eric, mark that honey spot with pheromone level 3.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="message-group">
+                        <div class="message">
+                            <div class="avatar">E</div>
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <span class="username">ElonMuskAnt </span>
+                                    <span class="timestamp">18:24:21</span>
                                 </div>
+                                <div class="message-text"></div>
+                                <div class="file-preview">I'm working on a tunneling robot that could optimize these routes, but the humans keep stepping on my prototypes. 🤖🔧😤</div>
                             </div>
                         </div>
                     </div>
