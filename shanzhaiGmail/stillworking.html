@@ -2,16 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #fcfcfc;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        
+        .error-number {
+            font-size: 8rem;
+            color: rgb(130, 89, 169);
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 8px rgba(130, 89, 169, 0.2);
+        }
+
+        .error-box {
+            border-radius: 50px; 
+            background-color: rgb(221, 211, 255);
+            outline: 3px dotted rgb(130, 89, 169);
+            padding: 30px 50px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .error-box h1 {
+            color: rgb(51, 51, 51);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .error-text {
+            color: rgb(102, 102, 102);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .cute-img {
+            width: 200px;
+            height: auto;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        .back-link {
+            display: inline-block;
+            background-color: rgb(130, 89, 169);
+            color: white ;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(130, 89, 169, 0.2);
+        }
+
+        .back-link:hover {
+            background-color: rgb(109, 71, 143);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(130, 89, 169, 0.3);
+        }
+
+      
+    </style>
 </head>
-<body style="background-color: black;">
+<body>
     
-<h1 style="color: white;">Find the "Slack" on the page then click it!</h1>
+    <div class="error-number">404</div>
 
-<img src="images/cuteant.jpg" alt="">
+    <div class="error-box">
+        <h1>Oops! We can't find that page 🐜</h1>
+        <p class="error-text">
+           Try to find the "slack" on the page!<br>
+           Let's go back home~
+        </p>
+    </div>
 
-<a href="index.html" style="color: white;">Don't stare at me! I'm busy.</a>
     
+    <img src="images/cuteant.jpg" alt="Cute ant" class="cute-img">
+
+    <a href="index.html" >Don't stare at me! Take me back ←</a>
 </body>
 </html>
