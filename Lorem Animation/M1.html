@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            overflow: hidden; 
+            animation: myColor 20s infinite alternate;}
+
+        @keyframes myColor{
+            from{background-color: black;
+            }to{
+                background-color: #ffe7fb;}
+
+        }
+
+        .chase-container {
+            position: relative;
+            width: 80vw;
+            height: 60vh;
+        }
+
+        .letter {
+            position: absolute;
+            font-size: 8vw; 
+            font-weight: bold;
+            color: #fff;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        
+        .letter-l {
+            background: #4facfe;
+            background-clip: text;
+            color: transparent; 
+            animation-name: runL; 
+        }
+
+        .letter-o {
+            background: #fa709a;
+            background-clip: text;
+            color: transparent;
+            animation-name: chaseO; 
+            animation-delay: 0.5s; 
+        }
+
+       
+        @keyframes runL {
+            0% { top: 50%; left: 0%; transform: translate(-50%, -50%) rotate(0deg); }
+            20% { top: 20%; left: 20%; transform: translate(-50%, -50%) rotate(15deg); }
+            40% { top: 70%; left: 40%; transform: translate(-50%, -50%) rotate(-10deg); }
+            60% { top: 30%; left: 70%; transform: translate(-50%, -50%) rotate(20deg); }
+            80% { top: 80%; left: 60%; transform: translate(-50%, -50%) rotate(-15deg); }
+            100% { top: 50%; left: 90%; transform: translate(-50%, -50%) rotate(0deg); }
+        }
+
+
+        @keyframes chaseO {
+            0% { top: 50%; left: 0%; transform: translate(-50%, -50%) scale(1); }
+            20% { top: 30%; left: 15%; transform: translate(-50%, -50%) scale(1.1); }
+            40% { top: 80%; left: 35%; transform: translate(-50%, -50%) scale(0.9); }
+            60% { top: 40%; left: 65%; transform: translate(-50%, -50%) scale(1.2); }
+            80% { top: 70%; left: 55%; transform: translate(-50%, -50%) scale(1); }
+            100% { top: 50%; left: 85%; transform: translate(-50%, -50%) scale(1.1); }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="chase-container">
+        <div class="letter letter-l">L</div>
+        <div class="letter letter-o">O</div>
+        
+        
+    </div>
+
+    
+</body>
+</html>

@@ -12,9 +12,9 @@ Born from a playful NYUSH library slogan warning against food spills ("ants will
 ### Preview
 | Image | Description |
 |-------|-------------|
-| ![Antmail Inbox](https://placeholder.com/800x450) | The Antmail inbox features ant-specific emails about foraging labs and tunnel algorithms, with timestamps in seconds to match ant lifespans. |
-| ![Slack for Ants](https://placeholder.com/800x450) | The ant-version of Slack (renamed "Tunnels") shows colony chat channels for weather alerts, homework, and watercooler gossip about human crumbs. |
-| ![Fight vs Hide](https://placeholder.com/800x450) | Click "fight" to summon a swarm of ants (to confuse enemies) or "hide" to make them vanish into a grassy background—interactive elements that embody ant survival tactics. |
+| ![Antmail Inbox](antmail.png) | The Antmail inbox features ant-specific emails about foraging labs and tunnel algorithms, with timestamps in seconds to match ant lifespans. |
+| ![Slack for Ants](slack.png) | The ant-version of Slack (renamed "Tunnels") shows colony chat channels for weather alerts, homework, and watercooler gossip about human crumbs. |
+| ![404 not found](404.png) | Also, because of the limited of links and button, there are some places that the users may want to click but turn out to find nothing, so I add this page to guide the users back to the right path. |
 
 ### Try It Yourself
 [http://127.0.0.1:5500/shanzhaigmail/index.html](http://127.0.0.1:5500/shanzhaigmail/index.html)
