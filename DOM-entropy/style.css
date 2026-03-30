@@ -1,0 +1,143 @@
+body{
+    background-color: rgb(34, 117, 117);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.buttonContainer{
+    display: flex;
+    margin-top: 0;
+
+}
+
+
+.skyContainer{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+
+.cloud{
+    background-color: white;
+    border-radius: 40%;
+    width: 100px;
+    height: 40px;
+    margin-left: 0;
+    position:absolute;
+
+
+
+}
+
+.cloudContainer{
+    display: flex;
+    position:relative;
+  
+    
+
+    
+}
+
+.RC{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rainContainer{
+    display: flex;
+ 
+}
+
+.heavyRainContainer{
+    display:flex;
+}
+
+.rain{
+    display: flex;
+}
+
+
+.rainDrop{
+    border-radius: 50%;
+    background-color:rgb(147, 205, 255) ;
+    width: 20px;
+    height: 20px;
+    animation:drop 3s infinite;
+    position:absolute;
+    /* left:40px;
+    top:10px; */
+
+
+    
+}
+
+@keyframes drop{
+    from{margin-top: 0;}
+    to{margin-top: 600px;}
+
+}
+
+
+.bird{
+    font-size: 30px;
+    color: aquamarine;
+    animation: birdFly 6s infinite;
+}
+
+
+@keyframes birdFly{
+    10%{margin-top:10px;margin-left: 10px;}
+    20%{margin-top:30px;margin-left: 50px;}
+    30%{margin-top:60px;margin-left: 30px;}
+    40%{margin-top:100px;margin-left: 60px;}
+    50%{margin-top:330px;margin-left: 10px;}
+    60%{margin-top:50px;margin-left: 200px;}
+    70%{margin-top:120px;margin-left: 100px;}
+    80%{margin-top:200px;margin-left: 300px;}
+    90%{margin-top:500px;margin-left: 500px;}
+    100%{margin-top:400px;margin-left: 100px;}
+
+}
+
+
+.flood{
+    position:fixed;
+    left: 0;
+    right:0;
+    bottom:0;
+    height: 100px;
+    color: rgb(63, 142, 184);
+    animation: flood 10s infinite;
+
+}
+
+@keyframes flood{
+    10%{height: 200px;}
+    20%{height: 300px;}
+    30%{height: 400px;}
+    40%{height: 500px;}
+    50%{height: 600px;}
+    60%{height: 650px;}
+    70%{height: 700px;}
+    80%{height: 750px;}
+    90%{height: 800px;}
+    100%{height: 850px;}
+
+}
+
+.fish{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation:swim 6s infinite;
+}
+
+@keyframes swim{
+    from{margin-left: 0;}
+    to{margin-left: 600px;}
+
+}
