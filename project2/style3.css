@@ -1,0 +1,57 @@
+body{
+    margin:0;
+}
+
+#sceneWrapper{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100vh;
+    width: 100%;
+    background-color: blue;
+}
+
+#sceneWrapperInner{
+    width: 80%;
+    /* height: 300px; */
+    background-color: rgb(234, 255, 0);
+    margin: auto;
+    margin-top: 200px;
+    position: relative;
+}
+
+#fountainWrapper{
+    background-color: green;
+    width:60%;
+    margin: auto;
+    position: relative;
+}
+
+
+#fountainWrapper img{
+    /* background-color: green; */
+    width:100%;
+}
+
+#fountainWrapper #waterWrapper{
+    background-color: pink;
+    width: 60%;
+    height: 20px;
+     position: absolute;
+     top:0px;
+     left:26%;
+}
+
+#robbieWrapper{
+    position: absolute;
+    background-color: blueviolet;
+    /* top:0; */
+    bottom:-30px;
+    left:30%;
+    width: 20%;
+
+}
+
+#robbieWrapper img{
+    width: 100%;
+}

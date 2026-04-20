@@ -22,15 +22,9 @@ function turnElementRed(element){
 }
 
 function turnOneButtonRed(){
-    let btn=document.querySelector("button");
-    turnElementRed(btn);
 
 }
 
 function turnAllButtonsRed(){
-    let btns=document.querySelectorAll("button");
-    console.log(btns);
-    // turnElementRed(btns);
-    btns.forWEach(turnAllButtonsRed);
 
 }

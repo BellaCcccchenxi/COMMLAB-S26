@@ -1,0 +1,586 @@
+body{
+    background-color: black;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* position: absolute; */
+}
+.noStyle{
+    text-decoration: none;
+    color: inherit;
+}
+.titleContainer{
+    position: absolute;
+}
+.title{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-size: 200px;
+    color: red;
+    font-weight: bolder;
+    animation: titleAppear 10s alternate;
+}
+
+@keyframes titleAppear{
+    from{
+        color: black;
+    }
+    to{
+        color: red;
+    }
+}
+.guidance{
+    position: absolute;
+    font-size: 40px;
+    color: rgb(49, 124, 3);
+    animation: guidanceAppear 10s alternate;
+    border: 5px rgb(232, 255, 218) solid;
+    border-radius: 20px;
+    background-color: rgb(183, 255, 216);
+    white-space: nowrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+#guidance1{
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    height: 50px;
+}
+
+@keyframes guidanceAppear {
+    from{
+        background-color: black;
+        color: black;
+        border: 5px black solid;
+
+    }
+    to{
+        background-color: rgb(183, 255, 216);
+        color: rgb(49, 124, 3);
+        border: 5px rgb(232, 255, 218) solid;
+
+    }
+}
+
+.time{
+    position: absolute;
+    top: 300px;
+    left: 80px;
+    font-size: 40px;
+    background-color: rgb(30, 67, 55);
+    color: azure;
+    animation: timeAppear 10s alternate;
+    border-radius: 20px;
+    padding-left: 600px;
+    padding-right: 600px;
+    text-align: center;
+    white-space: nowrap;
+
+
+
+}
+
+@keyframes timeAppear {
+    from{
+        background-color: black;
+        color: black;
+
+    }
+    to{
+        background-color: rgb(30, 67, 55);
+        color: azure;
+
+    }
+}
+
+.guidanceContainer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#guidance2-1{
+    position: absolute;
+    font-size: 30px;
+    top: 500px;
+    left: 450px;
+    padding-right: 0px;
+}
+#someone{
+    position: absolute;
+    font-size: 30px;
+    top: 500px;
+    left: 730px;
+    animation: guidanceAppear 10s, someone 40s;
+    animation-delay: 0s,5s;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+@keyframes someone{
+    from{
+        top:500px;
+    }
+    to{
+        top:2000px;
+    }
+}
+#guidance2-2{
+    position: absolute;
+    font-size: 30px;
+    top: 500px;
+    left: 850px;
+    padding-left: 0px;
+}
+
+#cecelia{
+    position: absolute;
+    font-size: 30px;
+    left: 990px;
+    top: 200px;
+    animation: cecelia 10s 1 forwards; 
+    background-color: rgb(183, 255, 216);
+    color: rgb(49, 124, 3);
+    border: 5px rgb(232, 255, 218) solid;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+
+@keyframes cecelia{
+    from{
+        top:0px;
+
+    }
+    to{
+        top:340px;
+    }
+
+}
+
+#fountainCImg{
+    position:absolute;
+    top: 440px;
+    left: 870px;
+    width: 310px;
+    height: 410px;
+}
+#fountainRImg{
+    position:absolute;
+    top: 440px;
+    left: 550px;
+    width: 310px;
+    height: 410px;
+    filter: blur(5px);
+    transition: filter 0.5s linear;
+
+
+}
+
+.findRobbie{
+    position: absolute;
+    top: 500px;
+    left: 350px;
+    background-color:black;
+    border: 5px rgb(159, 23, 23) solid;
+    border-radius: 20px;
+    color: red;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    animation: robbieAppear 3s 1;
+
+    
+}
+
+@keyframes robbieAppear{
+    from{
+        background-color: rgb(0, 0, 0,0.1);
+        border: 5px rgb(159, 23, 23,0.1) solid;
+        color: rgb(255, 0, 0,0.1);
+    }
+    to{
+        background-color: rgb(0, 0, 0,1);
+        border: 5px rgb(159, 23, 23,1) solid;
+        color: rgb(255, 0, 0,1);
+    }
+}
+
+#fountain{
+    position:absolute;
+    top:100px;
+    left: 250px;
+    width: 800px;
+    height: 800px;
+}
+
+#getCloser{
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    font-size: 25px;
+    white-space: nowrap;
+    background-color: white;
+    border:white;
+    color:black;
+    animation: buttonAppear 10s 1;
+
+}
+
+.bigger{
+    transform:scale(1.2);
+    transition: transform 0.5s linear;
+}
+#water{
+    position: absolute;
+    top: 300px;
+    left: 970px;
+    font-size: 25px;
+    white-space: nowrap;
+    animation: buttonAppear 10s;
+    background-color: white;
+    border:white;
+}
+@keyframes buttonAppear{
+    0%{
+        background-color: black;
+        border:black;
+    }
+    80%{
+        background-color:black;
+    }
+    100%{
+        background-color: white;
+    }
+}
+
+.box{
+    border-radius: 50%;
+    color: rgba(0, 255, 47, 0.606);
+    font-size: 40px;
+}
+/* .fountainContainer{
+    position:absolute;
+    display: flex;
+} */
+
+/* #fountainTop{
+    position:absolute;
+    top:500px;
+    left: 720px;
+    background-color: blueviolet;
+    height: 300px;
+    width: 30px;
+
+}
+#fountainBottom{
+    position:absolute;
+    top:800px;
+    left: 660px;
+    width: 150px;
+    height: 30px;
+    background-color: blue;
+} */
+
+.snake {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+}
+
+.snake p{
+    display: inline-block;
+    animation:snakeWave 1s alternate infinite, snakeMove 6s infinite;
+}
+
+.snake span{
+    display: inline-block; 
+}
+
+
+@keyframes snakeWave {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+    
+}
+
+
+@keyframes snakeMove{
+    0%   { transform: translateX(150px); }
+    100% { transform: translateX(250px); }
+}
+
+.words1{
+    position: absolute;
+    font-size: 30px;
+    background-color: white;
+    color: black;
+    left: 400px;
+    top: 580px;
+    animation:wordsAppearR 3s 1;
+    border:solid 3px rgb(180, 219, 255);
+}
+.words2{
+    position: absolute;
+    font-size: 30px;
+    background-color: white;
+    color: black;
+    left: 1100px;
+    top: 650px;
+    white-space: nowrap;
+    animation:wordsAppearC 6s 1;
+    border:solid 3px rgb(251, 234, 255);
+
+}
+.words3{
+    position: absolute;
+    font-size: 30px;
+    background-color: white;
+    color: black;
+    left: 450px;
+    top: 700px;
+    animation:wordsAppearR 9s 1;
+    border:solid 3px rgb(180, 219, 255);
+
+}
+.words4{
+    position: absolute;
+    font-size: 30px;
+    background-color: white;
+    color: black;
+    left: 1000px;
+    top: 750px;
+    white-space: nowrap;
+    animation:wordsAppearC 12s 1;
+    border:solid 3px rgb(251, 234, 255);
+
+}
+.words5{
+    position: absolute;
+    font-size: 30px;
+    background-color: white;
+    color: black;
+    left: 600px;
+    top: 810px;
+    white-space: nowrap;
+    animation:wordsAppear 15s 1;
+}
+
+@keyframes wordsAppearR{
+    0%{
+        background-color: rgba(255, 255, 255, 0);
+        color: rgba(0, 0, 0, 0);
+        border:solid 3px rgba(0, 0, 0, 0);
+
+    }
+    50%{
+        background-color: rgba(255, 255, 255, 0);
+        color: rgba(0, 0, 0, 0);
+        border:solid 3px rgba(0, 0, 0, 0);
+
+    }
+    100%{
+        background-color: white;
+        color: black;
+        border:solid 3px rgb(180, 219, 255);
+
+    }
+}
+@keyframes wordsAppearC{
+    0%{
+        background-color: rgba(255, 255, 255, 0);
+        color: rgba(0, 0, 0, 0);
+        border:solid 3px rgba(0, 0, 0, 0);
+
+    }
+    50%{
+        background-color: rgba(255, 255, 255, 0);
+        color: rgba(0, 0, 0, 0);
+        border:solid 3px rgba(0, 0, 0, 0);
+
+    }
+    100%{
+        background-color: white;
+        color: black;
+        border:solid 3px rgb(251, 234, 255);
+
+    }
+}
+
+@keyframes wordsAppear{
+    0%{
+        background-color: rgba(255, 255, 255, 0);
+        color: rgba(0, 0, 0, 0);
+    }
+    50%{
+        background-color: rgba(255, 255, 255, 0);
+        color: rgba(0, 0, 0, 0);
+    }
+    100%{
+        background-color: white;
+        color: black;
+    }
+}
+
+#vaseDrop{
+    position: absolute;
+    top:640px;
+    left: 850px;
+    width: 130px;
+    height: 200px;
+}
+
+.dropAnimation{
+    animation:drop 0.5s 1 forwards;
+    animation-delay: 12s;
+}
+
+@keyframes drop{
+    from{
+        top: 640px;
+    }
+    to{
+        top: 750px;
+    }
+}
+
+
+#idiot{
+    position: absolute;
+    color: red;
+    font-size: 250px;
+    left: 180px;
+    top: 200px;
+    white-space: nowrap;
+    animation: idiot 30s 1;
+}
+
+@keyframes idiot{
+    0%{
+        font-size: 1px;
+        color: black;
+        left: 305px;
+        top: 325;
+    }
+    90%{
+        color:black;
+        font-size: 1px;
+        left: 305px;
+        top: 325;
+    }
+    100%{
+        color: red;
+        font-size: 250px;
+    }
+
+
+}
+
+.lines{
+    position: absolute;
+    text-align: left;
+    border: solid white 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+@keyframes linesCAppear{
+    from{
+        background-color:black;
+        border:black 5px solid;
+        color: black;
+    }
+    to{
+        background-color: rgb(116, 84, 119);
+        border: white 5px solid;
+        color: white;
+
+    }
+}
+@keyframes linesRAppear{
+    10%{
+        background-color:black;
+        border:black 5px solid;
+        color:black;
+    }
+    60%{
+        background-color:black;
+        border:black 5px solid;
+        color:black;
+    }
+    100%{
+        background-color: rgb(36, 54, 91);
+        broder:white 5px solid;
+        color: white;
+    }
+}
+.lines p{
+    padding-left: 30px;
+}
+#C1{
+    background-color: rgb(116, 84, 119);
+    left: 10px;
+    top: 50px;
+    width: 350px;
+    animation: linesCAppear 3s 1;
+
+}
+#R1{
+    background-color: rgb(36, 54, 91);
+    left: 1100px;
+    top: 600px;
+    width: 300px;
+    height: 180px;
+    animation: linesRAppear 4s 1;
+
+}
+
+#vase{
+    position:absolute;
+    width: 450px;
+    height: 550px;
+    top: 230px;
+    left: 500px;
+}
+
+#RTyping{
+    width: 300px;
+    height: 200px;
+}
+
+#typewriters{
+    position: absolute;
+    top: 400px;
+    left: 450px;
+    width: 600px;
+    height: 450px;
+}
+
+#letterInput{
+    position: absolute;
+    top: 50px;
+    left: 580px;
+    width: 360px;
+    height: 500px;
+    background-color: rgb(255, 246, 212);
+}
+
+#letterText{
+    position: absolute;
+    top: 65px;
+    left: 610px;
+    width: 310px;
+    height: 450px;
+    background-color: rgb(107, 88, 19);
+}
