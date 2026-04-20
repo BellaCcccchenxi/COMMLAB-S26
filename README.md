@@ -15,7 +15,7 @@ This is Bella's Commlab!
 ![actor](actor.png)
 - [tutorial](tutorial)
 ![deer](embarrassingdeer.jpg)
--[clock](clock)
+- [clock](clock)
 
 
 
