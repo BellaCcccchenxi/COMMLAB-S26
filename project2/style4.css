@@ -6,7 +6,8 @@ body{
 .windowHeight{
     /* position:relative; */
     /* outline: black dotted 4px; */
-    background-color: rgb(169, 169, 27);
+    /* background-color: rgb(169, 169, 27); */
+    background-color:black;
     /* what should be the real size? */
     height: 90vh;
     width: 100%;
@@ -48,30 +49,68 @@ body{
 #letterPaper{
     position: absolute;
     width: 38%;
-    height: 50%;
+    height: 60%;
     top: 38%;
     left: 14%; 
 
+}
+
+#paperBall{
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 65%;
+    left: 23%; 
+    display: none;
+
+
+}
+.displayNone{
+    display: none;
 }
 
 #letterText{
     /* background-color: aquamarine; */
     position: absolute;
     width: 30%;
-    height: 50%;
+    height: 55%;
     left: 14%; 
-    padding-top: 2%;
     padding-left: 5%;
     padding-right: 5%;
     top: 38%;
     font-size: 20px;
+    gap: 10px;
+    padding-bottom: 0;
 }
+
+#text1{
+    font-family:cursive;
+    top:0;
+    font-weight: bold;
+}
+
 
 #text2{
     position:absolute;
+    top: 10%;
+    left: 11%;
+    right: 11%;
+    font-family:cursive;
+
 }
 #text4{
     position:absolute;
+    font-family:cursive;
+    left: 10%;
+
+
+}
+#text3{
+    position:absolute;
+    top:95%;
+    font-family:cursive;
+    font-weight: bold;
+
 
 }
 span{

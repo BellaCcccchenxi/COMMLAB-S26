@@ -1,0 +1,104 @@
+
+body{
+    background-image: url("backgroundImg/summer.jpeg");
+}
+.guidance{
+    position: absolute;
+    font-size: 40px;
+    color: rgb(49, 124, 3);
+    animation: guidanceAppear 10s alternate;
+    border: 5px rgb(232, 255, 218) solid;
+    border-radius: 20px;
+    background-color: rgb(183, 255, 216);
+    white-space: nowrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+
+@keyframes guidanceAppear {
+    from{
+        background-color: rgb(30, 67, 55,0);
+        color: rgb(30, 67, 55,0);
+        border: 5px rgb(30, 67, 55,0) solid;
+
+    }
+    to{
+        background-color: rgb(183, 255, 216);
+        color: rgb(49, 124, 3);
+        border: 5px rgb(232, 255, 218) solid;
+
+    }
+}
+.time{
+    position: absolute;
+    top: 300px;
+    left: 80px;
+    font-size: 40px;
+    background-color: rgb(30, 67, 55);
+    color: azure;
+    animation: timeAppear 10s alternate;
+    border-radius: 20px;
+    padding-left: 600px;
+    padding-right: 600px;
+    text-align: center;
+    white-space: nowrap;
+
+
+
+}
+
+@keyframes timeAppear {
+    from{
+        background-color:rgb(30, 67, 55,0);
+        color: rgb(30, 67, 55,0);
+
+    }
+    to{
+        background-color: rgb(30, 67, 55);
+        color: azure;
+
+    }
+}
+
+.guidanceContainer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#guidance2-1{
+    position: absolute;
+    font-size: 30px;
+    top: 500px;
+    left: 450px;
+    padding-right: 0px;
+}
+#someone{
+    position: absolute;
+    font-size: 30px;
+    top: 500px;
+    left: 730px;
+    animation: guidanceAppear 10s, someone 40s;
+    animation-delay: 0s,5s;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+@keyframes someone{
+    from{
+        top:500px;
+    }
+    to{
+        top:2000px;
+    }
+}
+#guidance2-2{
+    position: absolute;
+    font-size: 30px;
+    top: 500px;
+    left: 850px;
+    padding-left: 0px;
+}

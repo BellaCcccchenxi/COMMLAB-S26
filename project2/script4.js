@@ -27,8 +27,8 @@ allSpans.forEach(function(span){
 })
 
 allSpans2.forEach(function(span){
-    span.randomX = Math.random()*1000 - 600;
-    span.randomY = Math.random()*1000 - 600;
+    span.randomX = Math.random()*2000 - 1000;
+    span.randomY = Math.random()*2000 - 1000;
 })
 
 window.addEventListener("scroll", function(){
@@ -37,6 +37,8 @@ window.addEventListener("scroll", function(){
         let x=span.randomX;
         let y=span.randomY;
         span.style.transform = "translate("+x*percentage+"px,"+y*percentage+"px)";
+        span.style.color="rgba(0,0,0,"+(1-percentage)+")";
+
     });
     
 })
@@ -47,14 +49,23 @@ window.addEventListener("scroll", function(){
         let x=span.randomX;
         let y=span.randomY;
         span.style.transform = "translate("+x*(1-percentage)+"px,"+y*(1-percentage)+"px)";
-        span.style.backgroundColor="red";
+        span.style.color="rgba(0,0,0,"+percentage+")";
     });
     
 })
 
+window.addEventListener("scroll",function(){
+    let percentage = getScrollPercentage();
+    let paperBall=document.querySelector("#paperBall");
+    let letterPaper=document.querySelector("#letterPaper")
+    if(percentage==100){
+        paperBall.classList.remove("displayNone");
+        letterPaper.classList.add("displayNone")
+    }
+    else{
 
-    
-
+    }
+})
 
 
 

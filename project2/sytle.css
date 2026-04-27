@@ -1,5 +1,6 @@
 body{
-    background-color: black;
+    /* background-color: black; */
+    background-image: url("backgroundImg/page1.jpeg");
     /* display: flex; */
     justify-content: center;
     align-items: center;
@@ -25,7 +26,7 @@ body{
 
 @keyframes titleAppear{
     from{
-        color: black;
+        color: rgb(30, 67, 55,0);
     }
     to{
         color: red;
@@ -54,9 +55,9 @@ body{
 
 @keyframes guidanceAppear {
     from{
-        background-color: black;
-        color: black;
-        border: 5px black solid;
+        background-color: rgb(30, 67, 55,0);
+        color: rgb(30, 67, 55,0);
+        border: 5px rgb(30, 67, 55,0) solid;
 
     }
     to{
@@ -66,7 +67,7 @@ body{
 
     }
 }
-
+/* 
 .time{
     position: absolute;
     top: 300px;
@@ -87,8 +88,8 @@ body{
 
 @keyframes timeAppear {
     from{
-        background-color: black;
-        color: black;
+        background-color:rgb(30, 67, 55,0);
+        color: rgb(30, 67, 55,0);
 
     }
     to{
@@ -137,8 +138,8 @@ body{
     top: 500px;
     left: 850px;
     padding-left: 0px;
-}
-
+} */
+/* 
 #cecelia{
     position: absolute;
     font-size: 30px;
@@ -264,28 +265,7 @@ body{
     color: rgba(0, 255, 47, 0.606);
     font-size: 40px;
 }
-/* .fountainContainer{
-    position:absolute;
-    display: flex;
-} */
 
-/* #fountainTop{
-    position:absolute;
-    top:500px;
-    left: 720px;
-    background-color: blueviolet;
-    height: 300px;
-    width: 30px;
-
-}
-#fountainBottom{
-    position:absolute;
-    top:800px;
-    left: 660px;
-    width: 150px;
-    height: 30px;
-    background-color: blue;
-} */
 
 .snake {
   position: absolute;
@@ -544,43 +524,4 @@ body{
     height: 180px;
     animation: linesRAppear 4s 1;
 
-}
-
-#vase{
-    position:absolute;
-    width: 450px;
-    height: 550px;
-    top: 230px;
-    left: 500px;
-}
-
-#RTyping{
-    width: 300px;
-    height: 200px;
-}
-
-#typewriters{
-    position: absolute;
-    top: 400px;
-    left: 450px;
-    width: 600px;
-    height: 450px;
-}
-
-#letterInput{
-    position: absolute;
-    top: 50px;
-    left: 580px;
-    width: 360px;
-    height: 500px;
-    background-color: rgb(255, 246, 212);
-}
-
-#letterText{
-    position: absolute;
-    top: 65px;
-    left: 610px;
-    width: 310px;
-    height: 450px;
-    background-color: rgb(107, 88, 19);
-}
+} */
