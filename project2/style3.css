@@ -96,12 +96,33 @@ body{
 
 #robbieWrapper{
     position: absolute;
+    cursor: pointer;
     /* background-color: blueviolet; */
     /* top:0; */
     bottom:-30px;
     left:30%;
     width: 30%;
+    animation: inviteInteraction 4s infinite;
 
+}
+
+@keyframes inviteInteraction {
+    0%{
+        transform: translate(0,0);
+    }
+    3%{
+        transform: translate(-5px,0);
+    }
+    6%{
+        transform: translate(5px,0);
+    }
+    9%{
+        transform: translate(0px,0);
+    }
+    100%{
+        transform: translate(0,0);
+
+    }
 }
 
 #robbieWrapper img{
@@ -168,6 +189,7 @@ body{
     height: 100vh;
     width: 100%;
     left: -50%;
+    pointer-events: none;
 }
 
 #openWindowWrapper{

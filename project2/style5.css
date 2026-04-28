@@ -26,16 +26,15 @@ body{
 #sendLetter{
     position: absolute;
     width: 40%;
-    top: 280px;
+    top: 400px;
     left: 35%;
-    /* animation:sendLetter 2s 1 forward; */
 }
 
-/* @keyframes sendLetter {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-} */
+
+#brionyRun{
+    position: fixed;
+    left: 8px;
+    bottom:8px;
+    width: 100px;
+    /* transform: translate(100px,8px); */
+}

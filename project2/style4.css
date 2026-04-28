@@ -15,11 +15,12 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0;
+    overflow: hidden;
     
 }
 .windowHeight img{
     position: relative;
-    width: 65%;
+    /* width: 65%; */
     height: 100%;
 }
 
@@ -52,19 +53,86 @@ body{
     height: 60%;
     top: 38%;
     left: 14%; 
+    opacity: 1;
+}
 
+.inviteInteraction{
+    animation: inviteInteraction 1s infinite;
 }
 
 #paperBall{
     position: absolute;
     width: 20%;
-    height: 20%;
+    height: 30%;
     top: 65%;
-    left: 23%; 
-    display: none;
-
+    left: 38%; 
+    opacity: 0;
 
 }
+
+.throw{
+    animation:throw 1s 1 forwards linear ;
+    animation-delay: 0.5s;
+}
+
+@keyframes throw {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        transform: translate(-10px,-40px);
+        opacity: 1;
+    }
+    40%{
+        transform: translate(-100px,-200px);
+        opacity: 1;
+    }
+    60%{
+        transform: translate(-300px,-500px);
+        opacity: 1;
+    }
+    80%{
+        transform: translate(-500px,-10px);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(-600px,10px);
+        opacity: 1;
+
+    }
+}
+
+.envelopeAppear{
+    animation:envelopeAppear 1s forwards;
+    animation-delay: 0.5s;
+}
+@keyframes envelopeAppear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes inviteInteraction {
+    0%{
+        transform: translate(0,0);
+    }
+    3%{
+        transform: translate(-5px,0);
+    }
+    6%{
+        transform: translate(5px,0);
+    }
+    9%{
+        transform: translate(0px,0);
+    }
+    100%{
+        transform: translate(0,0);
+
+    }
+}
+
 .displayNone{
     display: none;
 }
@@ -98,6 +166,27 @@ body{
     font-family:cursive;
 
 }
+
+.text2{
+    position:absolute;
+    top: 10%;
+    left: 11%;
+    right: 11%;
+    font-family:cursive;
+    animation:appear 2s 1 forwards;
+
+}
+
+@keyframes appear{
+    0%{
+        color: rgb(213, 54, 54,0);
+    }
+    30%{color: rgb(213, 54, 54,0);
+    }
+    80%{
+        color: rgb(0, 0, 0,1);
+    }
+}
 #text4{
     position:absolute;
     font-family:cursive;
@@ -117,4 +206,63 @@ span{
     display: inline-block;
     white-space: pre;
 
+}
+
+#envelope{
+    position: absolute;
+    width: 25%;
+    height: 30%;
+    top: 65%;
+    left: 60%; 
+    opacity: 0;
+}
+
+.fadeAway{
+    animation: fade 1s forwards;
+}
+
+@keyframes fade{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.lines{
+    position: absolute;
+    top: 400px;
+    width: 60%;
+    left: 40%;
+    animation:wordsAppearR 3s 1 forwards,inviteInteraction 1s infinite;
+    border:solid 3px rgb(180, 219, 255);
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+@keyframes wordsAppearR{
+    0%{
+        background-color: rgba(255, 255, 255, 0);
+        color: rgba(0, 0, 0, 0);
+        border:solid 3px rgba(0, 0, 0, 0);
+
+    }
+    50%{
+        background-color: rgba(255, 255, 255, 0);
+        color: rgba(0, 0, 0, 0);
+        border:solid 3px rgba(0, 0, 0, 0);
+
+    }
+    100%{
+        background-color: white;
+        color: black;
+        border:solid 3px rgb(180, 219, 255);
+
+    }
 }

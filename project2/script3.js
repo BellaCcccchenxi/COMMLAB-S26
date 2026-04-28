@@ -14,6 +14,7 @@ robbie.addEventListener("click", function(){
     findRobbie.classList.add("findRobbie");
     findRobbie.innerText="and...Robbie?";
     document.body.append(findRobbie);
+    document.querySelector("#robbieWrapper").style.animation = "none";
 })
 
 let btnCloser=document.querySelector("#getCloser");
