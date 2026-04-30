@@ -248,7 +248,7 @@ body{
     transition: transform 0.5s linear;
 }
 #getCloser{
-    position:absolute;
+    position:fixed;
     top: 100px;
     left: 10%;
     font-size: 25px;
