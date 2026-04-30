@@ -1,5 +1,5 @@
 body{
-    margin: 0;
+    margin:0;
 }
 
 #sceneWrapper{
@@ -21,6 +21,7 @@ body{
 
 #innerWrapper{
     position: relative;
+
 }
 
 #sendLetter{
@@ -28,13 +29,42 @@ body{
     width: 40%;
     top: 400px;
     left: 35%;
+
+}
+
+#choice{
+    position:relative;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+#choice1{
+    position: absolute;
+    top: 800px;
+    left: 60%;
+    white-space: noWrap;
+    font-size: 30px;
+    border:solid 5px rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(214, 254, 255);
 }
 
 
-#brionyRun{
-    position: fixed;
-    left: 8px;
-    bottom:8px;
-    width: 100px;
-    /* transform: translate(100px,8px); */
+#choice2{
+    position: absolute;
+    top: 800px;
+    left: 30%;
+    white-space: noWrap;
+    font-size: 30px;
+    border:solid 5px rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(214, 255, 224);
+}
+
+.noStyle{
+    text-decoration: none;
+    color: inherit;
 }

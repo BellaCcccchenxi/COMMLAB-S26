@@ -1,0 +1,136 @@
+body{
+    margin:0;
+    background-color: black;
+}
+#paperBall{
+    position:relative;
+    top: -1000px;
+    width: 20%;
+    left: 40%;
+    opacity: 1;
+}
+
+.fadeAway{
+    animation: fade 1s forwards;
+}
+
+@keyframes fade{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.appear{
+    animation:appear 1s forwards;
+    animation-delay: 1s;
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+        transform: scale(1);
+
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}
+
+#letterPaper{
+    position: relative;
+    bottom: 2000px;
+    width: 20%;
+    left: 30%;
+    opacity: 0;
+}
+
+#brionyRun{
+    position: fixed;
+    left: 8px;
+    bottom:8px;
+    width: 300px;
+}
+
+.windowHeight{
+    /* position:relative; */
+    /* outline: black dotted 4px; */
+    /* background-color: rgb(169, 169, 27); */
+    background-color:black;
+    /* what should be the real size? */
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    
+}
+.windowHeight img{
+    position: relative;
+    height: 100%;
+}
+
+#btnWrapper{
+    position: relative;
+}
+#btn1{
+    position: relative;
+    background-color: aliceblue;
+    font-size: 100px;
+    top: -4000px;
+    left: 60%;
+}
+
+
+#innerWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 600px;
+}
+
+#shout{
+    position: relative;
+    bottom: 0;
+    width: 80%;
+    display: flex;
+}
+
+#shoutImg{
+    width: 100%;
+    transform: scaleX(-1);
+}
+#briony{
+    position: absolute;
+    font-size: 90px;
+    background-color: white;
+    white-space: noWrap;
+    left: 60%;
+    top: 450px;
+    animation: inviteInteraction 1s infinite;
+
+
+}
+
+
+@keyframes inviteInteraction {
+    0%{
+        transform: translate(0,0);
+    }
+    3%{
+        transform: translate(-5px,0);
+    }
+    6%{
+        transform: translate(5px,0);
+    }
+    9%{
+        transform: translate(0px,0);
+    }
+    100%{
+        transform: translate(0,0);
+
+    }
+}

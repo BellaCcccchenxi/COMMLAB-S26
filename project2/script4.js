@@ -1,4 +1,12 @@
+let typeSound=document.querySelector("#typeSound");
+let typeBackground=document.querySelector("#typeBackground");
 
+function playSound(){
+    typeSound.loop=true;
+    typeSound.play();
+    typeBackground.loop=true;
+    typeBackground.play();
+}
 
 function getScrollPercentage() {
     // how many pixels have we scrolled yet?
@@ -34,6 +42,9 @@ allSpans2.forEach(function(span){
     span.randomY = Math.random()*2000 - 1000;
 })
 
+let btn1=document.createElement("button");
+let btn2=document.querySelector("button");
+
 
 function positionLetterTexts(){
     // letter1
@@ -52,8 +63,15 @@ function positionLetterTexts(){
         span.style.transform = "translate("+x*(1-percentage)+"px,"+y*(1-percentage)+"px)";
         span.style.color="rgba(0,0,0,"+percentage+")";
     });
-    if(percentage>0.95){
-        document.querySelector("#letterPaper").classList.add("inviteInteraction");
+    // if(percentage>0.95){
+    //     document.querySelector("#letterPaper").classList.add("inviteInteraction");
+    // }
+
+    if(percentage>0.99){
+        btn1.innerText="I can not let her know"
+        btn1.classList.add("btn1");
+        letterText.append(btn1);
+
     }
 }
 
@@ -66,20 +84,7 @@ window.addEventListener("scroll", function(){
     
     // position letters every time the scrolling changes
     positionLetterTexts();
-    
-    // // paperBall
-    // let percentage = getScrollPercentage();
-    // console.log(percentage)
-    // let paperBall=document.querySelector("#paperBall");
-    // let letterPaper=document.querySelector("#letterPaper")
-    // if(percentage>0.95){
-    //     paperBall.classList.remove("displayNone");
-    //     letterPaper.classList.add("displayNone")
-    // }
-    // else{
-    //     paperBall.classList.add("displayNone");
-    //     letterPaper.classList.remove("displayNone")        
-    // }
+    playSound();
 })
 
 
@@ -89,30 +94,53 @@ let letterText=document.querySelector("#letterText");
 let text2=document.createElement("p");
 
 
-typeWrapper.addEventListener("click",function(){
+btn1.addEventListener("click",function(){
     paperBall.classList.remove("displayNone");
     paperBall.classList.add("throw");
     text4.classList.add("fadeAway");
-    text2.innerText="You’d be forgiven for thinking me mad—the way I acted this afternoon. The truth is I feel rather lightheaded and foolish in your presence, Cee, and I don’t think I can blame the heat.Will you forgive me?";
-    text2.classList.add("text2");
-    letterText.append(text2);
-    document.querySelector("#letterPaper").classList.remove("inviteInteraction");
+    // btn1.style.animation = "none";
+
+    btn1.classList.add("fadeAway");
+    // btn1.style.animation = "fade 1s forwards";
+    // text2.innerText="You’d be forgiven for thinking me mad—the way I acted this afternoon. The truth is I feel rather lightheaded and foolish in your presence, Cee, and I don’t think I can blame the heat.Will you forgive me?";
+    // text2.classList.add("text2");
+    // letterText.append(text2);
+    btn1.classList.remove("inviteInteraction");
+    let btn2=document.createElement("button");
+    btn2.innerText="The previous letter is better";
+    btn2.classList.add("btn2");
+    letterText.append(btn2);
+    btn2.addEventListener("click",function(){
+        // text2.innerText="You’d be forgiven for thinking me mad—the way I acted this afternoon. The truth is I feel rather lightheaded and foolish in your presence, Cee, and I don’t think I can blame the heat.Will you forgive me?";
+        // text2.classList.add("text2");
+        // letterText.append(text2);
+        allSpans.forEach(function(span){
+     
+        span.style.transition="transform 1s ease-out";
+        span.style.transform = "translate(0,0)";
+        span.style.color="black";
+        });
+        letterText.addEventListener("click",function(){
+        letterPaper.classList.add("fadeAway2");
+        letterText.classList.add("fadeAway2");
+        envelope.classList.remove("displayNone");
+        envelope.classList.add("envelopeAppear");
+        let lines=document.createElement("a");
+        lines.href="page5.html";
+        typeWrapper.append(lines);
+        lines.innerText="Briony is outside..."
+        lines.classList.add("lines");
+        })
+
+    })
+
+
 
 })
 
 
 
-text2.addEventListener("click",function(){
-    letterPaper.classList.add("fadeAway");
-    letterText.classList.add("fadeAway");
-    envelope.classList.remove("displayNone");
-    envelope.classList.add("envelopeAppear");
-    let lines=document.createElement("a");
-    lines.href="page5.html";
-    typeWrapper.append(lines);
-    lines.innerText="‘Briony, hi. ‘You couldn’t do me a favour, could you? Take this note to Cecilia. Run ahead and give it to her. It’s important.’"
-    lines.classList.add("lines");
-})
+
 
 
 

@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+
+#sceneWrapper{
+    position: relative;
+    display: flex;
+}
+
+#brionyRun{
+    position: absolute;
+    width: 60%;
+}
+#readWrapper{
+    top: 200px;
+    left: 40%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+.appear{
+    animation: appear 1s forwards;
+}
+/* .appear2{
+    animation: appear 1s forwards;
+    animation-delay: 3s;
+} */
+
+.ImgAppear1{
+    animation: appear 1s;
+    animation-delay: 3s;
+}
+.ImgAppear2{
+    animation: appear 1s;
+    animation-delay: 4s;
+}
+
+.ImgAppear3{
+    animation: appear 1s ;
+    animation-delay: 5s;
+}
+
+.ImgAppear4{
+    animation: appear 1s forwards;
+    animation-delay: 6s;
+}
+
+
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.fadeAway{
+    animation: fade 1s forwards;
+}
+
+.fadeAway2{
+    animation: fade 1s forwards;
+    animation-duration: 3s;
+}
+
+@keyframes fade{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.displayNone{
+    display: none;
+}
+#wrongLetter{
+    height: 10%;
+}
+
+#ceceliaRead{
+    position: relative;
+    width: 30%;
+    left: 60%;
+    /* opacity: 0; */
+
+}
+
+#ceceliaRead img{
+    position: absolute;
+    width: 100%;
+}
+
+#ceceliaRead1{
+    opacity:0;
+}
+#ceceliaRead2{
+    opacity: 0;
+}#ceceliaRead3{
+    opacity: 0;
+}#ceceliaRead4{
+    opacity: 0;
+}
