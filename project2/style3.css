@@ -13,29 +13,32 @@ body{
 }
 .guidance{
     position: absolute;
-    font-size: 40px;
-    color: rgb(49, 124, 3);
-    animation: guidanceAppear 2s alternate;
-    border: 5px rgb(232, 255, 218) solid;
-    border-radius: 20px;
-    background-color: rgb(183, 255, 216);
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 50px;
+    animation: guidanceAppear 10s alternate;
+    /* border: 5px rgb(232, 255, 218) solid; */
+    /* background-color: rgb(157, 168, 154); */
     white-space: nowrap;
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
+    font-family: fantasy;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 @keyframes guidanceAppear {
     from{
         background-color: rgb(183, 255, 216,0);
         color: rgb(49, 124, 3,0);
-        border: 5px rgb(232, 255, 218,0) solid;
 
     }
     to{
-        background-color: rgb(183, 255, 216);
-        color: rgb(49, 124, 3);
-        border: 5px rgb(232, 255, 218) solid;
+        color: rgb(0, 0, 0);
+        background-color: white;
 
     }
 }
@@ -84,7 +87,10 @@ body{
     /* background-color: green; */
     width:100%;
 }
+#fountain{
+    cursor: pointer;
 
+}
 #fountainWrapper #waterWrapper{
     /* background-color: pink; */
     width: 60%;
@@ -139,27 +145,32 @@ body{
     position: absolute;
     top: 500px;
     left: 350px;
-    background-color:black;
-    border: 5px rgb(159, 23, 23) solid;
-    border-radius: 20px;
-    color: red;
+    position: absolute;
     font-size: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 50px;
+    white-space: nowrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-family: fantasy;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 5px;
     animation: robbieAppear 3s 1;
+
 
     
 }
 @keyframes robbieAppear{
     from{
         background-color: rgb(0, 0, 0,0.1);
-        border: 5px rgb(159, 23, 23,0.1) solid;
         color: rgb(255, 0, 0,0.1);
     }
     to{
-        background-color: rgb(0, 0, 0,1);
-        border: 5px rgb(159, 23, 23,1) solid;
-        color: rgb(255, 0, 0,1);
+        color: rgb(0, 0, 0);
+        background-color: white;
     }
 }
 
@@ -256,6 +267,8 @@ body{
     background-color: white;
     border:white;
     opacity: 0;
+    cursor: pointer;
+
 }
 
 .getCloserAppear{
@@ -297,36 +310,41 @@ body{
 .lines{
     position: absolute;
     text-align: left;
-    border-radius: 5px;
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: rgb(255, 255, 255,0.7);
-    color: black;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    font-size: 20px;
+    animation: guidanceAppear 10s alternate;
+    white-space: nowrap;
     padding-left: 10px;
     padding-right: 10px;
+    text-align: center;
+    padding: 5px;
+
 
 }
 
 
 .words1{
-    top: -130px;
-    left: 10%;
+    top: -100px;
+    left: 30%;
     animation:wordsAppearR 3s 1;
-    border:solid 3px rgb(180, 219, 255);
+    background-color:  rgb(180, 219, 255);
 }
 .words2{
-    top: -100px;
-    left: 70%;
+    top: -80px;
+    left: 60%;
     animation:wordsAppearC 6s 1;
-    border:solid 3px rgb(251, 234, 255);
+    background-color:  rgb(251, 234, 255);
 
 }
 .words3{
     top: -30px;
-    left: 20%;
+    left: 25%;
     animation:wordsAppearR 9s 1;
-    border:solid 3px rgb(180, 219, 255);
+    background-color:  rgb(180, 219, 255);
+
 
 }
 /* .words4{
@@ -360,40 +378,29 @@ body{
     0%{
         background-color: rgba(255, 255, 255, 0);
         color: rgba(0, 0, 0, 0);
-        border:solid 3px rgba(0, 0, 0, 0);
-
     }
     50%{
-        background-color: rgba(255, 255, 255, 0);
+        background-color: rgba(255, 255, 255,0);
         color: rgba(0, 0, 0, 0);
-        border:solid 3px rgba(0, 0, 0, 0);
-
     }
     100%{
-        background-color: rgb(255, 255, 255,0.7);
+        background-color:  rgb(180, 219, 255);
         color: black;
-        border:solid 3px rgb(180, 219, 255);
-
+        
     }
 }
 @keyframes wordsAppearC{
     0%{
         background-color: rgba(255, 255, 255, 0);
         color: rgba(0, 0, 0, 0);
-        border:solid 3px rgba(0, 0, 0, 0);
-
     }
     50%{
         background-color: rgba(255, 255, 255, 0);
         color: rgba(0, 0, 0, 0);
-        border:solid 3px rgba(0, 0, 0, 0);
-
     }
     100%{
-        background-color: rgb(255, 255, 255,0.7);
         color: black;
-        border:solid 3px rgb(251, 234, 255);
-
+        background-color:  rgb(251, 234, 255);
     }
 }
 
@@ -443,6 +450,8 @@ body{
     white-space: nowrap;
     animation: idiot 1s 1 forwards; 
     animation-delay: 8.5s;
+    font-family:cursive;
+
 }
 
 @keyframes idiot{
@@ -451,9 +460,9 @@ body{
     }
     to{
         color:red;
-        font-size: 120px;
-        border:solid 3px rgb(251, 234, 255);
-        background-color: rgb(255, 255, 255,0.9);
+        font-size: 150px;
+        /* border:solid 3px rgb(251, 234, 255); */
+        /* background-color: rgb(255, 255, 255,0.9); */
         border-radius: 12px;
 
     }
@@ -466,24 +475,31 @@ body{
     position: fixed;
     bottom: 5px;
     left: 40%;
-    color:rgb(255,0,0,0);
-    font-size: 1px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 50px;
     white-space: nowrap;
-    animation: link 3s 1 forwards; 
-    animation-delay: 10s;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    font-family: fantasy;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    animation: link 2s forwards;
+    animation-delay: 12s;
+    opacity: 0;
+
 
 }
 
 @keyframes link{
     from{
-        color: rgb(255,0,0,0);
+        opacity:0;
     }
     to{
-        background-color: rgb(183, 255, 216);
-        color: rgb(49, 124, 3);
-        border: 5px rgb(232, 255, 218) solid;
-        border-radius: 10px;
-        font-size: 20px;
+        opacity: 1;
     }
 
 
@@ -491,16 +507,17 @@ body{
 
 .nextPage{
     position: fixed;
-    bottom: 45px;
-    left: 55%;
+    bottom: 55px;
+    left: 75%;
     color:rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: 30px;
     white-space: nowrap;
     background-color: white;
     border:white;
     opacity: 0;
     animation: buttonAppear 2s forwards,inviteInteraction 2s infinite;
-    animation-delay: 11s,11s;
-    padding: 10px;
-    border-radius: 10px;
+    animation-delay: 12s,12s;
+    padding-left: 10px;
+    padding-right: 10px;
+
 }

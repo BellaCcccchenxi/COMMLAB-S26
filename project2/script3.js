@@ -74,8 +74,6 @@ robbie.addEventListener("click", function(){
     idiot.innerText="You idiot!";
     link.innerText="Looks like Robbie's brought troubles again... I don't like him.";
     nextPage.innerText="Go to Robbie's house";
-    idiot.href="page4.html";
-    link.href="page4.html";
     nextPage.href="page4.html";
 
 

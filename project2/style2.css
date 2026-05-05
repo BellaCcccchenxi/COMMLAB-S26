@@ -1,19 +1,31 @@
 
 body{
-    background-image: url("backgroundImg/summer.jpeg");
+    margin: 0;
+}
+
+#backgroundWrapper{
+    position: relative;
+}
+
+#summer{
+    position: absolute;
+    width: 100%;
+    left: 0;
 }
 .guidance{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 50px;
     position: absolute;
     font-size: 40px;
-    color: rgb(49, 124, 3);
     animation: guidanceAppear 10s alternate;
-    border: 5px rgb(232, 255, 218) solid;
-    border-radius: 20px;
-    background-color: rgb(183, 255, 216);
     white-space: nowrap;
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
+    padding: 5px;
+    font-family: fantasy;
+    padding-top: 10px;
 }
 
 
@@ -21,20 +33,18 @@ body{
     from{
         background-color: rgb(30, 67, 55,0);
         color: rgb(30, 67, 55,0);
-        border: 5px rgb(30, 67, 55,0) solid;
 
     }
     to{
-        background-color: rgb(183, 255, 216);
-        color: rgb(49, 124, 3);
-        border: 5px rgb(232, 255, 218) solid;
-
+        color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 50px;
     }
 }
 .time{
     position: absolute;
     top: 300px;
-    left: 80px;
+    left: 5%;
     font-size: 40px;
     background-color: rgb(30, 67, 55);
     color: azure;
@@ -63,7 +73,7 @@ body{
 }
 
 .guidanceContainer{
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,31 +84,31 @@ body{
     position: absolute;
     font-size: 30px;
     top: 500px;
-    left: 450px;
-    padding-right: 0px;
+    left: 30%;
+    padding-right: 5px;
 }
 #someone{
     position: absolute;
     font-size: 30px;
     top: 500px;
-    left: 730px;
-    animation: guidanceAppear 10s, someone 40s;
+    left: 48%;
+    animation: guidanceAppear 10s, someone 10s forwards;
     animation-delay: 0s,5s;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 @keyframes someone{
     from{
         top:500px;
     }
     to{
-        top:2000px;
+        top:950px;
     }
 }
 #guidance2-2{
     position: absolute;
     font-size: 30px;
     top: 500px;
-    left: 850px;
-    padding-left: 0px;
+    left: 60%;
+    padding-left: 5px;
 }

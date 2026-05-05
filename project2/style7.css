@@ -11,6 +11,7 @@ body{
 #brionyRun{
     position: absolute;
     width: 60%;
+    cursor: pointer;
 }
 #readWrapper{
     top: 200px;
@@ -19,6 +20,10 @@ body{
     display: flex;
     align-items: center;
     opacity: 0;
+}
+#brionyRead{
+    cursor: pointer;
+
 }
 .appear{
     animation: appear 1s forwards;
@@ -102,4 +107,92 @@ body{
     opacity: 0;
 }#ceceliaRead4{
     opacity: 0;
+}
+
+.nextPage{
+    position: relative;
+    top: 200px;
+    left: 75%;
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+    white-space: nowrap;
+    background-color: white;
+    border:white;
+    opacity: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.nextPageAppear{
+    animation: buttonAppear 2s forwards,inviteInteraction 2s infinite;
+    animation-delay: 10s,9s;
+}
+
+@keyframes buttonAppear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes inviteInteraction {
+    0%{
+        transform: translate(0,0);
+    }
+    3%{
+        transform: translate(-5px,0);
+    }
+    6%{
+        transform: translate(5px,0);
+    }
+    9%{
+        transform: translate(0px,0);
+    }
+    100%{
+        transform: translate(0,0);
+
+    }
+}
+.noStyle{
+    text-decoration: none;
+    color: inherit;
+}
+
+#line{
+    position: relative;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    background-color:  rgb(251, 234, 255);
+    border-radius: 50px;
+    font-size: 30px;
+    top: 200px;
+    left: -80%;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    padding: 5px;
+    opacity: 0;
+}
+
+.lineAppear{
+    animation:buttonAppear 2s 1 forwards;
+    animation-delay: 8s;
+}
+
+@keyframes wordsAppearC{
+    0%{
+        background-color: rgba(255, 255, 255, 0);
+        color: rgba(0, 0, 0, 0);
+    }
+    50%{
+        background-color: rgba(255, 255, 255, 0);
+        color: rgba(0, 0, 0, 0);
+    }
+    100%{
+        color: black;
+    }
 }

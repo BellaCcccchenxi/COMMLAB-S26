@@ -27,11 +27,14 @@ window.addEventListener("scroll", function(){
 
 let paperBall=document.querySelector("#paperBall");
 let letterPaper=document.querySelector("#letterPaper")
-
 let btn1=document.querySelector("#btn1");
+let wrong=document.querySelector("#wrong");
 
 btn1.addEventListener("click",function(){
-  paperBall.classList.add("fadeAway");
-  letterPaper.classList.add("appear");
+    paperBall.classList.add("fadeAway");
+    btn1.classList.add("fadeAway");
+    letterPaper.classList.add("appear");
+    wrong.classList.add("appear");
 })
+
 

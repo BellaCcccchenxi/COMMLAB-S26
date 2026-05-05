@@ -1,70 +1,62 @@
 body{
     margin:0;
-}
-
-#sceneWrapper{
-    position: relative;
-    width: 100%;
-    height: 100vh;
+    background-color: beige;
 }
 
 
-#backgroundImgWrapper{
-    position:absolute;
-    width: 100%;
-}
 
-#backgroundImgWrapper img{
+
+
+
+#backgroundImg{
     width: 100%;
+    margin-bottom: 200px;
 }
 
 
 #innerWrapper{
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
 
 }
 
-#sendLetter{
-    position: absolute;
-    width: 40%;
-    top: 400px;
-    left: 35%;
 
-}
 
 #choice{
-    position:relative;
     display: flex;
     gap: 10px;
-    width: 100%;
+    width: 100%;    
+    margin-bottom: 100px;
+    top: 500px;
+    justify-content: space-evenly;
 }
 
 #choice1{
-    position: absolute;
-    top: 800px;
-    left: 60%;
     white-space: noWrap;
     font-size: 30px;
-    border:solid 5px rgb(0, 0, 0);
     border-radius: 10px;
     padding: 10px;
     background-color: rgb(214, 254, 255);
+    font-family:sans-serif;
+    font-family: monospace;
 }
 
 
 #choice2{
-    position: absolute;
-    top: 800px;
-    left: 30%;
     white-space: noWrap;
     font-size: 30px;
-    border:solid 5px rgb(0, 0, 0);
     border-radius: 10px;
     padding: 10px;
     background-color: rgb(214, 255, 224);
+    font-family: monospace;
+
 }
 
 .noStyle{
     text-decoration: none;
     color: inherit;
 }
+

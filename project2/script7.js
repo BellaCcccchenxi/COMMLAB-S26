@@ -12,6 +12,9 @@ brionyRun.addEventListener("click",function(){
     brionyRun.classList.add("fadeAway");
 })
 
+let nextPage=document.querySelector(".nextPage");
+let line=document.querySelector("#line");
+
 readWrapper.addEventListener("click",function(){
     readWrapper.classList.add("fadeAway");
     brionyRun.classList.remove("displayNone");
@@ -21,6 +24,8 @@ readWrapper.addEventListener("click",function(){
     ceceliaRead2.classList.add("ImgAppear2");
     ceceliaRead3.classList.add("ImgAppear3");
     ceceliaRead4.classList.add("ImgAppear4");
+    nextPage.classList.add("nextPageAppear","noStyle");
+    line.classList.add("lineAppear");
 
 
 })

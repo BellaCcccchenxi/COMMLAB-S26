@@ -1,0 +1,126 @@
+body{
+    background-color: black;
+    margin: 0;
+}
+#sceneWrapper{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    gap: 500px;
+    margin-top: 200px;    
+}
+
+#robbieListen{
+    width: 30%;
+}
+#brionyTalk{
+    width: 25%;
+}
+#linesWrapper{
+    position: relative;
+}
+#words1{
+    position: absolute;
+    top: -700px;
+    left: 50%;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    font-size: 25px;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 0;
+
+    animation:wordsAppear 3s 1 forwards;
+    animation-delay: 0s;
+    background-color: white;
+}
+#words2{
+    position: absolute;
+    top: -650px;
+    left: 45%;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    font-size: 25px;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 0;
+
+    animation:wordsAppear 3s 1 forwards;
+    animation-delay: 4s;
+    background-color: white;
+}
+#words3{
+    position: absolute;
+    top: -600px;
+    left: 48%;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    font-size: 25px;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 0;
+
+    animation:wordsAppear 3s 1 forwards;
+    animation-delay: 8s;
+    background-color: white;
+}
+#words4{
+    position: absolute;
+    top: -550px;
+    left: 50%;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    font-size: 25px;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 0;
+
+    animation:wordsAppear 3s 1 forwards;
+    animation-delay: 12s;
+    background-color: white;
+}
+#words5{
+    position: absolute;
+    top: -200px;
+    left: 40%;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    font-size: 25px;
+    white-space: nowrap;
+    padding-left: 60px;
+    padding-right: 60px;
+    opacity: 0;
+
+    animation:wordsAppear 3s 1 forwards;
+    animation-delay: 16s;
+    background-color:  rgb(180, 219, 255);
+}
+
+#buttonWrapper{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#buttonWrapper button{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#truth{
+    background-color: black;
+    color: white;
+}
+
+@keyframes wordsAppear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
