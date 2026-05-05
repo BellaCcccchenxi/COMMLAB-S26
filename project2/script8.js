@@ -1,5 +1,6 @@
-let slider = document.querySelector("#slider");
+let loveMusic=document.querySelector("#loveMusic");
 
-if (slider.value == 100) {
-  console.log("The number is big!");
-}
+document.body.addEventListener("click",function(){
+  loveMusic.loop=true;
+  loveMusic.play();
+})

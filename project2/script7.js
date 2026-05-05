@@ -5,7 +5,13 @@ let ceceliaRead1=document.querySelector("#ceceliaRead1");
 let ceceliaRead2=document.querySelector("#ceceliaRead2");
 let ceceliaRead3=document.querySelector("#ceceliaRead3");
 let ceceliaRead4=document.querySelector("#ceceliaRead4");
+let loveMusic=document.querySelector("#loveMusic");
 
+document.body.addEventListener("click",function(){
+  loveMusic.loop=true;
+  loveMusic.play();
+  console.log("hi");
+})
 
 brionyRun.addEventListener("click",function(){
     readWrapper.classList.add("appear");
