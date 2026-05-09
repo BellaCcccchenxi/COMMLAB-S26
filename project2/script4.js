@@ -98,22 +98,13 @@ btn1.addEventListener("click",function(){
     paperBall.classList.remove("displayNone");
     paperBall.classList.add("throw");
     text4.classList.add("fadeAway");
-    // btn1.style.animation = "none";
-
     btn1.classList.add("fadeAway");
-    // btn1.style.animation = "fade 1s forwards";
-    // text2.innerText="You’d be forgiven for thinking me mad—the way I acted this afternoon. The truth is I feel rather lightheaded and foolish in your presence, Cee, and I don’t think I can blame the heat.Will you forgive me?";
-    // text2.classList.add("text2");
-    // letterText.append(text2);
     btn1.classList.remove("inviteInteraction");
     let btn2=document.createElement("button");
     btn2.innerText="The previous letter is better";
     btn2.classList.add("btn2");
     letterText.append(btn2);
     btn2.addEventListener("click",function(){
-        // text2.innerText="You’d be forgiven for thinking me mad—the way I acted this afternoon. The truth is I feel rather lightheaded and foolish in your presence, Cee, and I don’t think I can blame the heat.Will you forgive me?";
-        // text2.classList.add("text2");
-        // letterText.append(text2);
         allSpans.forEach(function(span){
      
         span.style.transition="transform 1s ease-out";
